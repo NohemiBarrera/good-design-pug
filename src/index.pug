@@ -1,0 +1,51 @@
+doctype
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Good design
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet", href="style.css")
+	body
+
+		nav.navbar.navbar-default
+			div.container-fluid
+				div.navbar-header
+					a.navbar-brand(href="#")
+						img(alt="Brand", src="img/logo2.png")#logo2
+		div.container-fluid#pan
+			div.row
+				div.col-md-6.col-xs-6.col-sm-6
+					h1#mobile Mobile Strategy App
+					p#backyard Backyard is a modern and customizable landing  page template designed to increase conversion of your product. Backyard  is flexible to suit any kind of your business. Try now and join with our happy customers!
+					a.btn.btn-default(href="#", role="button", id="features") Features
+					a.btn.btn-default(href="#", role="button", id="subscribe") Subscribe
+					p Available for: IOS ANDROID
+		div.container-fluid
+			div.row
+				div.col-md-6.col-xs-6.col-sm-6
+					img(src="../dist/img/telefono.jpg")#telefono
+				div.col-md-6.col-xs-6
+					h2#optimize Optimize performance through advanced targeting solutions
+					p#marketing Good marketing makes the company  look smart. Great marketing makes the customer feel smart, - Joe Chernov. Never doubt a small group of thougthful, committed people can change the world. Indeed, it is the only thing that ever has, - Margaret Mead. The best way to predict the future is to create it, - Peter Drucker.
+					a.btn.btn-default(href="#", role="button", id="learnMore") Learn More
+		div.container-fluid
+			div.row
+				div.col-md-12.col-xs-12#gain
+					h2#recreate Recreate your ideas and gain more success
+					p Increase your user loyalty by maintaining mutual communication and nurturing your only community.
+				div.col-md-4.col-xs-4.col-sm-4
+					img(src="../dist/img/telefono.jpg")#telefono
+				mixin txt_descripcion(encabezado, texto, encabezado2, texto2)
+					div.col-md-4.col-xs-4.col-sm-4
+						h3 #{encabezado}
+						p #{texto}
+						h3 #{encabezado2}
+						p #{texto2}
+				+txt_descripcion("Marketing Strategy", "Good marketing makes the company look smart. GReat marketing makes the customer feels smart.", "Store Optimization", "Never doubt a small group of thougthful, committed people can change the world. Indeed, it is the only thing that ever has.")
+				+txt_descripcion("App Monetization", "Content builds relationships. Relationships are built on trust. Trust drives revenue.- Andrew Davis", "User Management", "Instead of using technology to automate processes, think about using technology to enhance human interaction.")
+
+		footer#footer
+			p#copy Copyright Backyard 2015 - Template by Mox design
+
+		script(src="http://code.jquery.com/jquery-2.2.4.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
